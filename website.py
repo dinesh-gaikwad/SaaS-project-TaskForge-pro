@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*")  # Allow all origins for Codespaces
 
 # Database connection
 def get_db():
@@ -93,4 +93,4 @@ def get_users():
 # Project management, team management, comments, attachments, notifications, permissions, reporting, export CSV/PDF, audit logs, etc.
 
 if __name__=='__main__':
-    app.run(debug=True,port=5000)
+    app.run(host='0.0.0.0', port=5001, debug=True)
