@@ -3,12 +3,12 @@ __pycache__/
 .env
 venv/
 node_modules/
-.idea/
-.vscode/
 dist/
 build/
 logs/
 *.log
 coverage/
 .pytest_cache/
+.idea/
+.vscode/
 .DS_Store
