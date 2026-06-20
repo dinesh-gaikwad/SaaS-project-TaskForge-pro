@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Card, Button } from 'react-bootstrap'
-
 function Team() {
   return (
     <Container>
@@ -14,5 +13,4 @@ function Team() {
     </Container>
   )
 }
-
 export default Team

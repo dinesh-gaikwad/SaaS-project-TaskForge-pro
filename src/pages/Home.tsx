@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-
 function Home() {
   return (
     <Container>
@@ -42,5 +41,4 @@ function Home() {
     </Container>
   )
 }
-
 export default Home

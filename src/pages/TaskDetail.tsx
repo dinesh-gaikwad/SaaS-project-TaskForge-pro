@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Card, Button } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
-
 function TaskDetail() {
   const { id } = useParams()
   return (
@@ -17,5 +16,4 @@ function TaskDetail() {
     </Container>
   )
 }
-
 export default TaskDetail

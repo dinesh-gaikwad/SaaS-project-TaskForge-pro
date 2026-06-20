@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-
 function Tasks() {
   return (
     <Container>
@@ -20,5 +19,4 @@ function Tasks() {
     </Container>
   )
 }
-
 export default Tasks

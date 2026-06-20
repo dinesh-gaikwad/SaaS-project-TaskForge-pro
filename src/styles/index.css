@@ -1,5 +1,4 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
-
 :root {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
@@ -7,22 +6,17 @@
   color: #213547;
   background-color: #ffffff;
 }
-
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
-
-#root {
   min-height: 100vh;
 }
-
 .btn-primary {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
-
 .card {
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
