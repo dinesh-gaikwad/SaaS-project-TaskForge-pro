@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Card } from 'react-bootstrap'
+
 function Settings() {
   return (
     <Container>
@@ -13,4 +14,5 @@ function Settings() {
     </Container>
   )
 }
+
 export default Settings

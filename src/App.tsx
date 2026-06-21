@@ -8,6 +8,7 @@ import CreateTask from './pages/CreateTask'
 import Team from './pages/Team'
 import Settings from './pages/Settings'
 import Admin from './pages/Admin'
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,4 +25,5 @@ function App() {
     </BrowserRouter>
   )
 }
+
 export default App

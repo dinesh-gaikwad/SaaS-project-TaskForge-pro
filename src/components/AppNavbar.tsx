@@ -1,8 +1,10 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
+
 function AppNavbar() {
   const location = useLocation()
+
   return (
     <Navbar bg="primary" variant="dark" expand="lg" className="mb-4">
       <Container>
@@ -21,4 +23,5 @@ function AppNavbar() {
     </Navbar>
   )
 }
+
 export default AppNavbar
