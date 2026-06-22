@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body text-center py-4">
+                <div class="avatar-xl mx-auto mb-3">
+                    {{ user.full_name[:2].upper() }}
+                </div>
+                <h4 class="mb-1">{{ user.full_name }}</h4>
+                <p class="text-muted mb-2">{{ user.email }}</p>
+                <span class="badge bg-primary">{{ user.role | title }}</span>
+                {% if user.department %}
+                <span class="badge bg-secondary">{{ user.department }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Account Information</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless">
+                    <tr>
+                        <th width="35%" class="text-muted">Full Name</th>
+                        <td>{{ user.full_name }}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Email</th>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Role</th>
+                        <td><span class="badge bg-primary">{{ user.role | title }}</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Department</th>
+                        <td>{{ user.department or "—" }}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Phone</th>
+                        <td>{{ user.phone or "—" }}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Status</th>
+                        <td>
+                            <span class="badge bg-{{ 'success' if user.status == 'active' else 'secondary' }}">
+                                {{ user.status | title }}
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Last Login</th>
+                        <td>{{ user.last_login or "—" }}</td>
+                    </tr>
+                    <tr>
+                        <th class="text-muted">Member Since</th>
+                        <td>{{ user.created_at[:10] if user.created_at else "—" }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

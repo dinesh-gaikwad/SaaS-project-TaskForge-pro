@@ -1,5 +1,0 @@
-1. Run: python run.py
-2. Open: http://127.0.0.1:8000
-3. Docs: /docs and /redoc
-4. Health: /api/health
-5. Meta: /api/meta/info
