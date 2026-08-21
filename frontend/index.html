@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StudySync AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">Study<span>Sync</span><small> AI • 2027</small></div>
+  <nav><a href="#dashboard">Dashboard</a><a href="#groups">Groups</a><a href="#rooms">Rooms</a><a href="#tutors">Tutors</a></nav>
+  <button class="primary">Start Studying</button>
+</header>
+
+<main>
+<section class="hero" id="dashboard">
+  <div>
+    <p class="eyebrow">COLLABORATIVE LEARNING OS</p>
+    <h1>Study smarter.<br><em>Together.</em></h1>
+    <p class="lead">A modern virtual study hub for groups, live rooms, shared resources, quizzes and tutors.</p>
+    <div class="actions"><button class="primary" onclick="loadGroups()">Explore Groups</button><button class="ghost" onclick="scrollToId('rooms')">Open Study Room →</button></div>
+  </div>
+  <div class="hero-card">
+    <div class="status">● LIVE STUDY ROOM</div>
+    <h3>Python AI Lab</h3>
+    <p>27 learners online</p>
+    <div class="avatars">A&nbsp; M&nbsp; R&nbsp; +24</div>
+    <div class="progress"><span></span></div>
+    <small>Today's focus · 78%</small>
+  </div>
+</section>
+
+<section class="stats">
+ <div><b id="groupsStat">—</b><span>Study Groups</span></div>
+ <div><b id="resourcesStat">—</b><span>Shared Resources</span></div>
+ <div><b id="quizStat">—</b><span>Active Quizzes</span></div>
+ <div><b id="tutorStat">—</b><span>Expert Tutors</span></div>
+</section>
+
+<section id="groups" class="section">
+ <div class="section-head"><div><p class="eyebrow">COMMUNITY</p><h2>Find your study people</h2></div><button class="ghost" onclick="createDemoGroup()">+ Create group</button></div>
+ <div id="groupGrid" class="grid"></div>
+</section>
+
+<section id="rooms" class="section room">
+ <div><p class="eyebrow">REAL-TIME</p><h2>Virtual Study Room</h2>
+ <div class="room-layout">
+  <div class="board"><canvas id="canvas" width="700" height="380"></canvas></div>
+  <div class="chat"><h3>Live Chat</h3><div id="messages" class="messages"><p><b>Maya:</b> Let's finish derivatives today!</p><p><b>Aarav:</b> I'm sharing the notes.</p></div><div class="chatbar"><input id="chatInput" placeholder="Send a message..."><button onclick="sendChat()">Send</button></div></div>
+ </div>
+</section>
+
+<section class="section" id="tutors">
+ <div class="section-head"><div><p class="eyebrow">EXPERT HELP</p><h2>Book a tutor</h2></div></div>
+ <div id="tutorGrid" class="grid"></div>
+</section>
+</main>
+<footer>StudySync AI · Portfolio Project 2027 · Built for collaborative learning</footer>
+<script src="app.js"></script>
+</body></html>
